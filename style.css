@@ -1,0 +1,20 @@
+/* 
+medida bootstrap
+
+container
+container-fluid
+
+xxl
+xl
+lg
+md
+sm
+--
+col-12
+
+
+*/
+
+.post .card-body {
+    padding: 0 !important;
+}

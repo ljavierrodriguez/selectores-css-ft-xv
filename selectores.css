@@ -1,0 +1,150 @@
+/* Selector Univesal */
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+/* ul * {
+    color: red;
+    padding: 0 10px;
+    margin: 5px 0;
+} */
+
+/* Selector de Id */
+#box {
+    background-color: #ccc;
+    color: white;
+    height: auto;
+    width: 500px;
+    box-sizing: content-box;
+}
+/* Selector Descendiente */
+#box .iconos {
+    width: 100%;
+    padding: 2px 5px;
+    background-color: cadetblue;
+    box-sizing: border-box;
+}
+
+#box .backend .fa-python {
+    color: blue;
+}
+
+/* Selector de Clase */
+.frontend {
+    list-style: none;
+}
+
+.backend {
+    list-style: none;
+}
+
+/* Selector de Elemento o Etiqueta */
+
+h1 {
+    color: blue;
+}
+
+/* Selector pseudo clase */
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: brown;
+}
+
+/* Selector Adyacente */
+
+ul + ol {
+    margin-top: 20px;
+    color: blue;
+}
+
+a + h4 {
+    color: firebrick;
+}
+
+/* Selector Hijo */
+
+#box > .fa-python {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Selector Hermano */
+
+ul ~ div {
+    background-color: brown;
+}
+
+/* Selector de Atributo */
+a[class] {
+    width: 100%;
+    color: red;
+}
+
+a[class=facebook]{ /* busca por el valor de la propiedad */
+    color: blue;
+}
+
+a[class*=oo]{ /* busca que contenga el valor en la propiedad */
+    color: #ccc;
+}
+
+a[href^=https]{ /* busca por el inicio del valor de la propiedad */
+    color: blueviolet;
+}
+
+img[src$=".png"]{ /* Busca por el final del valor de la propiedad */
+    width: 100px;
+    height: 100px;
+}
+
+.iconos > i[class~="fa-brands"]{
+    color: blueviolet;
+}
+
+/* Selector Pseudo Elemento */
+
+p::first-line {
+    color: yellowgreen;
+}
+
+p::first-letter {
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.frontend li:first-child{
+    color: pink;
+}
+.frontend li:last-child{
+    color: green;
+}
+
+.backend li:nth-child(2) {
+    color: black;
+}
+
+.backend li:nth-last-child(2){
+    color: blue;
+}
+
+@media all and (max-width: 600px) {
+    body {
+        background-color: green;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px){
+    body {
+        background-color: brown;
+        color: wheat;
+    }
+}
+
+@media only print {
+    
+}
